@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Postal Seva</title>
+    <style>
+        /* Background styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('login_bg.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Dark overlay to improve contrast */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark transparency effect */
+        }
+
+        /* Login form container */
+        .login-container {
+            position: relative;
+            background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+            padding: 25px;
+            border-radius: 12px;
+            width: 400px; /* Increased width */
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            backdrop-filter: blur(10px); /* Frosted glass effect */
+        }
+
+        h2 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        input {
+            width: 92%;
+            padding: 12px;
+            margin: 12px 0;
+            border: none;
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            outline: none;
+            font-size: 16px;
+        }
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Checkbox and forgot password */
+        .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            color: white;
+            margin: 10px 0;
+        }
+
+        .options label {
+            display: flex;
+            align-items: center;
+            gap: 5px; /* Space between checkbox and text */
+        }
+
+        .options a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .options a:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #800000;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #600000;
+        }
+
+        .register-link {
+            margin-top: 18px;
+            font-size: 14px;
+            color: white;
+        }
+
+        .register-link a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div> <!-- Dark Overlay for Contrast -->
+    
+    <div class="login-container">
+        <h2>Login to Postal Seva</h2>
+        <form>
+            <input type="text" placeholder="User ID" required>
+            <input type="password" placeholder="Password" required>
+            <div class="options">
+                <label for="remember">
+                    <input type="checkbox" id="remember" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 5px;"> 
+                    Remember Me
+                </label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit">Login</button>
+            <div class="register-link">
+                <p>Do not have an account? <a href="uniqueID.html">Register</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
